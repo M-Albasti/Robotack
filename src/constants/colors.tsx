@@ -1,0 +1,33 @@
+const colors = {
+  primary: "#469CC0",
+  secondary: "#29519C",
+  white: "#FFFFFF",
+  offWhite: "#EEEEF1",
+  black: "#000000",
+  gray: "#808080",
+  lightGray: "#D3D3D3",
+  darkGray: "#A9A9A9",
+  red: "#FF0000",
+  green: "#00FF00",
+  blue: "#0000FF",
+  yellow: "#FFFF00",
+  orange: "#FFA500",
+  purple: "#800080",
+  pink: "#FFC0CB",
+  brown: "#A52A2A",
+  cyan: "#00FFFF",
+  magenta: "#FF00FF",
+  headerBG: "#ADD8E6", // Assuming the color of "headerBG.png" is light blue
+  charcoal: "#7E7F83",
+  periwinkle: "#D3D8FE",
+  skyBlue: "#45A1FF",
+  steelGray: "#A6A7B7",
+  lightPink: "#F4B4DA",
+  blushPink: "#FBE7F3",
+  semiTransparentGray: "#6363631A",
+  transparent: "#ffffff00",
+  mediumGray: "#777777",
+  newGray: "#989898",
+};
+
+export default colors;
