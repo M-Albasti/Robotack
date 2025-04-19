@@ -24,7 +24,6 @@ const CustomTabBar = ({
   return (
     <View style={styles.tabBarStyle}>
       {state.routes.map((route, index) => {
-        console.log("🚀 ~ {state.routes.map ~ index:", index);
         const { options } = descriptors[route.key];
         const label: string =
           options.title !== undefined ? options.title : route.name;
@@ -51,7 +50,7 @@ const CustomTabBar = ({
         };
 
         return (
-          <Fragment>
+          <Fragment key={label}>
             <TabBarButton
               href={buildHref(route.name, route.params)}
               Icon={
@@ -63,7 +62,6 @@ const CustomTabBar = ({
               isFocused={isFocused}
               onPress={onPress}
               onLongPress={onLongPress}
-              key={label}
               accessibilityState={isFocused ? { selected: true } : {}}
               accessibilityLabel={options.tabBarAccessibilityLabel}
               testID={options.tabBarButtonTestID}

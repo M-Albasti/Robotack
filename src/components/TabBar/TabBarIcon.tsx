@@ -14,7 +14,6 @@ interface TabBarButtonProps {
 }
 
 const TabBarIcon = ({ iconName, color }: TabBarButtonProps) => {
-  console.log("🚀 ~ TabBarIcon ~ iconName:", iconName);
   let IconComponent;
   switch (iconName) {
     case "Home":
